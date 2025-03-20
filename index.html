@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Actividades Scratch - Prof. Carlos Nieto</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    /* Si quieres que funcione todo desde un solo archivo quita esta línea y copia el CSS aquí */
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Blog Scratch - Profesor de Tecnología  <br>
+    Carlos Nieto Navas
+    </h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('primeros')">Primeros Pasos</a>
+    <a href="#" onclick="showSection('practica')">Practica y Aprende</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="primeros">
+      <div class="intro">
+        <h2>ACTIVIDADES PARA APRENDER A PROGRAMAR CON SCRATCH</h2>
+        <p><strong>¿En qué consiste?</strong></p>
+        <ul>
+          <li>Actividades o retos gratuitos con Scratch para aprender a programar.</li>
+          <li>Retos pensados para realizar en el aula o en casa.</li>
+          <li>No es necesaria experiencia previa.</li>
+        </ul>
+        <p><strong>¿Cómo participar?</strong></p>
+        <ol>
+          <li><a href="https://scratch.mit.edu/join" target="_blank">Regístrate</a> en Scratch y valida tu cuenta a través del correo electrónico que has recibido.</li>
+          <li>Elige el reto, sigue las instrucciones y resuélvelo.</li>
+          <li>Comparte el reto con nosotros.</li>
+          <li>Puedes ver la solución de otros usuarios en esta página.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="practica" style="display: none;">
+      <div class="activity">
+        <h2>Actividad 1: ¡Crea un Juego de Laberinto!</h2>
+        <p><strong>Paso 1:</strong> Entra a <a href="https://scratch.mit.edu/" target="_blank">Scratch</a> y crea un nuevo proyecto.</p>
+        <p><strong>Paso 2:</strong> Dibuja un laberinto en el escenario.</p>
+        <p><strong>Paso 3:</strong> Usa bloques de movimiento para mover tu personaje.</p>
+        <p><strong>Paso 4:</strong> Agrega un "fin del juego" cuando el personaje llegue a la meta.</p>
+      </div>
+
+      <div class="activity">
+        <h2>Actividad 2: Juego de Atrapa Frutas 🍎</h2>
+        <p><strong>Paso 1:</strong> Usa un fondo y agrega un sprite como canasta.</p>
+        <p><strong>Paso 2:</strong> Haz que caigan frutas aleatoriamente.</p>
+        <p><strong>Paso 3:</strong> Usa bloques para mover la canasta con las flechas.</p>
+        <p><strong>Paso 4:</strong> Suma puntos cuando atrapes frutas.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>¡Diviértete programando con Scratch! - Prof. Carlos Nieto</p>
+  </footer>
+
+  <!-- 🟢 JavaScript para mostrar y ocultar secciones -->
+  <script>
+    function showSection(sectionId) {
+      // Ocultar ambas
+      document.getElementById('primeros').style.display = 'none';
+      document.getElementById('practica').style.display = 'none';
+      
+      // Mostrar la que seleccionamos
+      document.getElementById(sectionId).style.display = 'block';
+    }
+
+    // Opcional: Mostrar siempre la primera al cargar
+    showSection('primeros');
+  </script>
+</body>
+</html>
+
