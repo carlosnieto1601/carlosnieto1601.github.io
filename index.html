@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Actividades Scratch - Prof. Carlos Nieto</title>
   <link rel="stylesheet" href="index.css">
-  <style>
-    /* Si quieres que funcione todo desde un solo archivo quita esta línea y copia el CSS aquí */
-  </style>
 </head>
 
 <body>
@@ -35,11 +32,23 @@
         </ul>
         <p><strong>¿Cómo participar?</strong></p>
         <ol>
-          <li><a href="https://scratch.mit.edu/join" target="_blank">Regístrate</a> en Scratch y valida tu cuenta a través del correo electrónico que has recibido.</li>
+          <li><strong>Crea tu cuenta en Scratch</strong> siguiendo el video tutorial:</li>
+        </ol>
+        
+        <!-- Aquí insertamos el video -->
+        <div style="text-align:center; margin-top: 20px;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/t2-etkHjNPI" 
+            title="Tutorial crear cuenta en Scratch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- <ol start="2">
           <li>Elige el reto, sigue las instrucciones y resuélvelo.</li>
           <li>Comparte el reto con nosotros.</li>
           <li>Puedes ver la solución de otros usuarios en esta página.</li>
-        </ol>
+        </ol> -->
+
       </div>
     </section>
 
@@ -67,20 +76,15 @@
     <p>¡Diviértete programando con Scratch! - Prof. Carlos Nieto</p>
   </footer>
 
-  <!-- 🟢 JavaScript para mostrar y ocultar secciones -->
+  <!-- JavaScript -->
   <script>
     function showSection(sectionId) {
-      // Ocultar ambas
       document.getElementById('primeros').style.display = 'none';
       document.getElementById('practica').style.display = 'none';
-      
-      // Mostrar la que seleccionamos
       document.getElementById(sectionId).style.display = 'block';
     }
 
-    // Opcional: Mostrar siempre la primera al cargar
     showSection('primeros');
   </script>
 </body>
 </html>
-
