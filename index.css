@@ -1,48 +1,68 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #fff8e1;
-  }
-  header {
-    background-color: #f57c00;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-    background-color: #837f7b;
-  }
-  nav a {
-    color: white;
-    padding: 1rem;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  nav a:hover {
-    background-color: #f57c00;
-  }
-  .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-  }
-  .activity, .intro {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  h2 {
-    color: #f57c00;
-  }
-  footer {
-    background-color: #f57c00;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 20px;
-  }
-  
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8e1;
+}
+
+header {
+  background-color: #f57c00;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #837f7b;
+}
+
+nav a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #f57c00;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.activity, .intro {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #f57c00;
+}
+
+h3 {
+  color: #d35400;
+  margin-top: 15px;
+}
+
+footer {
+  background-color: #f57c00;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+ol, ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}

@@ -9,7 +9,7 @@
 
 <body>
   <header>
-    <h1>Blog Scratch - Profesor de Tecnología  <br>
+    <h1>Blog Scratch - Profesor de Tecnología <br>
     Carlos Nieto Navas
     </h1>
   </header>
@@ -17,10 +17,12 @@
   <nav>
     <a href="#" onclick="showSection('primeros')">Primeros Pasos</a>
     <a href="#" onclick="showSection('practica')">Practica y Aprende</a>
+    <a href="#" onclick="showSection('romper')">Romper Ladrillos</a>
   </nav>
 
   <div class="container">
 
+    <!-- Sección Primeros Pasos -->
     <section id="primeros">
       <div class="intro">
         <h2>ACTIVIDADES PARA APRENDER A PROGRAMAR CON SCRATCH</h2>
@@ -34,24 +36,16 @@
         <ol>
           <li><strong>Crea tu cuenta en Scratch</strong> siguiendo el video tutorial:</li>
         </ol>
-        
-        <!-- Aquí insertamos el video -->
         <div style="text-align:center; margin-top: 20px;">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/t2-etkHjNPI" 
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/t2-etkHjNPI" 
             title="Tutorial crear cuenta en Scratch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
           </iframe>
         </div>
-
-        <!-- <ol start="2">
-          <li>Elige el reto, sigue las instrucciones y resuélvelo.</li>
-          <li>Comparte el reto con nosotros.</li>
-          <li>Puedes ver la solución de otros usuarios en esta página.</li>
-        </ol> -->
-
       </div>
     </section>
 
+    <!-- Sección Practica -->
     <section id="practica" style="display: none;">
       <div class="activity">
         <h2>Actividad 1: ¡Crea un Juego de Laberinto!</h2>
@@ -70,6 +64,64 @@
       </div>
     </section>
 
+    <!-- Nueva Sección Romper Ladrillos -->
+    <section id="romper" style="display: none;">
+      <div class="activity">
+        <h2>Actividad 3: Romper Ladrillos</h2>
+        <p>En esta práctica vamos a programar un juego que consiste en romper ladrillos con una pelota que rebota en una barra. Cada ladrillo roto nos dará un punto.</p>
+
+        <img src="imagen/1.png" alt="Ejemplo imagen 1" style="max-width:300px;">
+        <h3>Pasos:</h3>
+        <ol>
+          <li>Inicia el editor de Scratch y selecciona el idioma Español.<br>
+          </li>
+          <li>Borra el objeto gato y añade una barra de control (<em>Button2</em>).<br>
+            <img src="imagen/gato.png" alt="Ejemplo imagen 2" style="max-width:300px;">
+            <img src="imagen/2.png" alt="Ejemplo imagen 2" style="max-width:300px;">
+          </li>
+          <li>Programa la barra para que siga la posición del ratón.<br>
+            <img src="imagen/5.png" alt="Ejemplo imagen 3" style="max-width:300px;">
+            
+          </li>
+          <li>Añade un ladrillo (<em>Button3</em>) y una pelota (<em>Tennis ball</em>).</li>
+          <img src="imagen/7.png" alt="Ejemplo imagen 3" style="max-width:300px;">
+          <img src="imagen/8.png" alt="Ejemplo imagen 3" style="max-width:300px;">
+          <li>Programa la pelota para que rebote y desaparezca si cae.<br>
+            <img src="Imagen/9.1.png" alt="Ejemplo imagen 5" style="max-width:300px;">
+            <img src="Imagen/9.2.png" alt="Ejemplo imagen 5" style="max-width:300px;">
+          </li>
+          <li>Crea una variable <strong>puntos</strong> para contar los ladrillos rotos.</li> <br>
+          <img src="imagen/11.png" alt="Ejemplo imagen 7" style="max-width:300px;">
+          <li>Crea una variable <strong>posición</strong> para organizar los ladrillos.<br>
+            <img src="imagen/11.png" alt="Ejemplo imagen 7" style="max-width:300px;">
+          </li>
+          <li>Duplica ladrillos para crear varias filas y ajusta posiciones.<br>
+          </li>
+          <li>
+            Organiza los ladrillos en filas.<br>
+  
+            <img src="imagen/13.2.png" alt="Ejemplo imagen 13.2" style="max-width:300px;">
+             <img src="imagen/13.1.png" alt="Ejemplo imagen 13.1" style="max-width:300px;"><br>
+          </li>
+          <li>Agrega efectos de sonido al romper un ladrillo.</li>
+          <li>Haz que la pelota rebote en los bordes.<br>
+            <img src="imagen/11.png" alt="Ejemplo imagen 11" style="max-width:300px;">
+          </li>
+          <li>Agrega un contador de vidas.</li>
+          <li>
+            Finaliza el juego cuando no queden ladrillos.<br>
+          </li>
+        </ol>
+
+        <h3>Retos:</h3>
+        <ul>
+          <li>Crear dos filas de ladrillos con posiciones distintas.</li>
+          <li>Finalizar el juego tras perder 3 pelotas.</li>
+          <li>Personalizar el aspecto de los personajes.</li>
+        </ul>
+      </div>
+    </section>
+
   </div>
 
   <footer>
@@ -81,9 +133,9 @@
     function showSection(sectionId) {
       document.getElementById('primeros').style.display = 'none';
       document.getElementById('practica').style.display = 'none';
+      document.getElementById('romper').style.display = 'none';
       document.getElementById(sectionId).style.display = 'block';
     }
-
     showSection('primeros');
   </script>
 </body>
