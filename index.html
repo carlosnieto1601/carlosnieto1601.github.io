@@ -8,9 +8,12 @@
 </head>
 
 <body>
-  <header>
-    <h1>Blog Scratch - Profesor de Tecnología <br>
-    Carlos Nieto Navas
+  <header style="display: flex; align-items: center;">
+    <img src="Imagen/profe.jpeg" alt="Foto del docente" 
+         style="height:80px; width:80px; object-fit:cover; border-radius:50%; margin-right:15px;">
+    <h1 style="margin: 0;">
+      Blog Scratch - Profesor de Tecnología <br>
+      Carlos Nieto Navas
     </h1>
   </header>
 
@@ -18,6 +21,7 @@
     <a href="#" onclick="showSection('primeros')">Primeros Pasos</a>
     <a href="#" onclick="showSection('practica')">Practica y Aprende</a>
     <a href="#" onclick="showSection('romper')">Romper Ladrillos</a>
+    <a href="#" onclick="showSection('trabajo')">Trabajo en Clase Avance</a>
   </nav>
 
   <div class="container">
@@ -64,7 +68,7 @@
       </div>
     </section>
 
-    <!-- Nueva Sección Romper Ladrillos -->
+    <!-- Sección Romper Ladrillos -->
     <section id="romper" style="display: none;">
       <div class="activity">
         <h2>Actividad 3: Romper Ladrillos</h2>
@@ -117,6 +121,91 @@ Al iniciarse el programa, aparecerán todos los ladrillos en la parte superior d
       </div>
     </section>
 
+    <!-- Nueva Sección Trabajo en Clase Avance -->
+    <section id="trabajo" style="display: none;">
+      <div class="activity">
+        <h2>Trabajo en Clase Avance: Juego de Fútbol</h2>
+        <p>En esta actividad vamos a crear un juego de fútbol con menú interactivo y fondos personalizados.</p>
+
+        <h3>Pasos:</h3>
+        <ol>
+          <li>
+            <strong>Cambiar el fondo y agregar dos fondos diferentes</strong><br>
+            Ve a la sección de fondos en Scratch y selecciona dos fondos diferentes para tu juego de fútbol. 
+            Uno será para el menú principal y otro para el juego.
+            <br><br>
+            <div style="display: flex; justify-content: center; gap: 20px;">
+              <img src="Imagen/casa1.png" alt="" style="width:400px; height:350px; object-fit: cover;">
+              <img src="Imagen/profe1.jpg" alt="" style="width:400px; height:350px; object-fit: cover;">
+            </div>
+            <br><br>
+            <div style="display: flex; justify-content: center; gap: 15px;">
+              <img src="Imagen/profe2.jpg" alt="" style="width:400px; height:380px; object-fit: cover;">
+              <img src="Imagen/profe9.jpg" alt="" style="width:400px; height:380px; object-fit: cover;">
+            </div>
+            <br>
+            Agrega el siguiente código para cambiar entre fondos:
+            <br><br>
+             Seleccionamos codigo:
+             <br><br>
+            <img src="Imagen/profe4.jpg" alt="Código para cambiar fondos" style="max-width:300px;">
+            <br><br>
+            <img src="Imagen/profe3.jpg" alt="Código para cambiar fondos" style="max-width:300px;">
+            <br><br>
+            <img src="Imagen/profe10.jpg" alt="Código para cambiar fondos" style="width: auto;">
+
+          </li>
+
+          <li>
+            <strong>Crear un menú con texto "JUEGO DE FÚTBOL"</strong><br>
+            Crea un nuevo objeto de texto que diga "JUEGO DE FÚTBOL". Este será el título de nuestro menú principal.
+            Posiciónalo en la parte superior del escenario.
+            <br><br>
+            <div style="display: flex; justify-content: center; gap: 15px;">
+              <img src="Imagen/profe5.png" alt="" style="width:auto; height:auto; object-fit: cover;">
+              <img src="Imagen/profe6.jpg" alt="" style="width:auto; height:a; object-fit: cover;">
+            </div>
+            <br><br>
+            <div style="display: flex; justify-content: center; gap: 15px;">
+              <img src="Imagen/profe7.jpg" alt="" style="width:300px; height:300px; object-fit: cover;">
+              <img src="Imagen/profe8.jpg" alt="" style="width:300px; height:300px; object-fit: cover;">
+            </div>
+            El objeto solo necesita aparecer cuando estemos en el menú principal.
+          </li>
+
+          <li>
+            <strong>Crear un botón de inicio (Button2)</strong><br>
+            Añade un objeto Button2 que servirá como botón de inicio.
+            Personaliza sus colores para que se vea atractivo y agrega el texto "INICIO" o "START".
+            <br><br>
+            <div style="display: flex; justify-content: center; gap: 45px;">
+              <img src="Imagen/2.png" alt="" style="width:200px; height:300px; object-fit: cover;">
+              <img src="Imagen/profe12.jpg" alt="" style="width:430px; height:300px; object-fit: cover;">
+            </div>
+            <br><br>
+            Cambia los colores del botón para que combine con el tema del fútbol.
+          </li>
+
+          <li>
+            <strong>Programar efecto de el botón</strong><br>
+            Programa el botón para que cambie de tamaño cuando el mouse pase por encima.
+            Esto hará que el menú se vea más profesional y responsivo.
+            <br><br>
+            
+              <img src="Imagen/profe11.jpg" alt="" style="width:auto; height:auto; object-fit: cover;">
+            <br><br>
+            El código debe incluir:
+            <ul>
+              <li>Detectar cuando el mouse toca el botón</li>
+              <li>Aumentar el tamaño del botón (por ejemplo, a 110%)</li>
+              <li>Regresar al tamaño normal cuando el mouse se aleja</li>
+            </ul>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
   </div>
 
   <footer>
@@ -129,6 +218,7 @@ Al iniciarse el programa, aparecerán todos los ladrillos en la parte superior d
       document.getElementById('primeros').style.display = 'none';
       document.getElementById('practica').style.display = 'none';
       document.getElementById('romper').style.display = 'none';
+      document.getElementById('trabajo').style.display = 'none';
       document.getElementById(sectionId).style.display = 'block';
     }
     showSection('primeros');
